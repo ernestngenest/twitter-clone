@@ -12,6 +12,6 @@ class ApplicationController < ActionController::Base
   end
 
   def authenticate_user
-    redirect_to new_session_path, alert: 'Please signup or login to continue' unless logged_in?
+    redirect_to new_session_path, alert: 'Please signup or login to continue' unless logged_in? # Auntention USER
   end
 end
